@@ -1,17 +1,14 @@
 ###Get movies from data list####
+from model import data
 
 class Movies:
 
-	def __init__(self, title = None, date = None, types = None):
+	def __init__(self, title, date):
 		self.title = title
 		self.date = date
-		self.types = types
-		self.movies_in_list = []		
+
+		# where to know where is the movie
+		self.where = None
 
 	
-	def get_random_movie_in_list(self):
-		pass
-
-
-	def get_other_user_movie(self):
-		pass
+	

@@ -20,5 +20,3 @@ friends = [
     ("Lucie",),
     ("Zoé", "Terminator 2 : Le Jugement dernier"),
 ]
-
-me = [("Myself and I")]

@@ -1,15 +1,16 @@
 from model import data
 from controller.movies import Movies
 from controller.sortmovies import SortMovies
+from controller.dvdmovies import DVDMovies
+from controller.vhfmovies import VHFMovies
+from controller.library import Library
 
-def main():
+#def main():
 
-    main_movie_list = SortMovies(data.films)
-    print(main_movie_list.generate_movies_by_type())
+lib = Library()
+movies = lib.movies
 
+print(movies)
 
-
-
-
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+#    main()
