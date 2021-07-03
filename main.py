@@ -1,23 +1,15 @@
 from model import data
 from controller.movies import Movies
+from controller.sortmovies import SortMovies
 
 def main():
 
-    main_movie_list = []
-    main_movie_list.extend(data.films)
-    print(len(main_movie_list))
-    for i in main_movie_list:
-        print(i)
-
-    """movies = Movies(main_movie_list[:])
-    print(movies)"""
-    
+    main_movie_list = SortMovies(data.films)
+    print(main_movie_list.generate_movies_by_type())
 
 
 
 
 
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

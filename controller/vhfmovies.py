@@ -1,8 +1,9 @@
 ###Get only movies in VHF format####
 
 class VHFMovies(Movies):
-    
-	def __init__(self, name, creation_date, location, type = « VHF » ):
-	super().__init__( name, creation_date, location, type)
+
+    types = "VHF"
+	 
+	def __init__(self, title, date):
+	super().__init__( title, date)
 	
-	def get_only_vhf_movie(self):

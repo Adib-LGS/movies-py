@@ -1,8 +1,8 @@
 ####Get Only movies in DVD format###
 
 class DVDMovies(Movies):
+	types = "dvd"
 
-	def __init__(self, name, creation_date, location, type = « DVD » ):
-	super().__init__( name, creation_date, location, type)
+	def __init__(self, title, date):
+		super().__init__(title, date)
 	
-	def get_only_dvd_movie(self):
